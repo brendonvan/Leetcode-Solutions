@@ -11,8 +11,5 @@ class Solution:
             else:
                 scoreboard.append(int(score))
         
-        total_score = 0
-        for score in scoreboard:
-            total_score += score
             
-        return total_score
+        return sum(scoreboard)
