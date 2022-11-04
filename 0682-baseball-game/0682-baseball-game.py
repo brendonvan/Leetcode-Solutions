@@ -5,9 +5,9 @@ class Solution:
             if score == "C":
                 scoreboard.pop()
             elif score == "D":
-                scoreboard.append(int(scoreboard[-1]) * 2)
+                scoreboard.append(scoreboard[-1] * 2)
             elif score == "+":
-                scoreboard.append(int(scoreboard[-1]) + int(scoreboard[-2]))
+                scoreboard.append(scoreboard[-1] + scoreboard[-2])
             else:
                 scoreboard.append(int(score))
         
