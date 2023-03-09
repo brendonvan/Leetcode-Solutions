@@ -3,12 +3,18 @@ class Solution:
         Anagrams = {}
         
         for string in strs:
-            sortedString = ''.join(sorted(string))
-            print(sortedString)
             
+            # makes it alphabetical
+            sortedString = ''.join(sorted(string))
+            
+            #print(string)
+            #print(sortedString)
+            #print(Anagrams)
+            
+            # if the alphabetical order string is in hashtable
             if sortedString in Anagrams:
                 Anagrams[sortedString].append(string)
             
             else: Anagrams[sortedString] = [string]
         
-        return list(Anagrams.values())
+        return Anagrams.values()
