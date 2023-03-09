@@ -17,4 +17,4 @@ class Solution:
             
             else: Anagrams[sortedString] = [string]
         
-        return Anagrams.values()
+        return list(Anagrams.values())
