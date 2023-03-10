@@ -6,6 +6,7 @@ class Solution:
 
         for r in range(9):
             for c in range(9):
+                print(board[r][c])
                 if board[r][c] == ".":
                     continue
                 if (
