@@ -3,14 +3,12 @@ class Solution:
         if len(s) != len(t):
             return False
         
-        s_hmap = {}
-        t_hmap = {}
+        return collections.Counter(s) == collections.Counter(t)
+#         s_hmap = {}
+#         t_hmap = {}
         
-        for i in range(len(s)):
-            s_hmap[s[i]] = s_hmap.get(s[i], 0) + 1
-            t_hmap[t[i]] = t_hmap.get(t[i], 0) + 1
+#         for i in range(len(s)):
+#             s_hmap[s[i]] = s_hmap.get(s[i], 0) + 1
+#             t_hmap[t[i]] = t_hmap.get(t[i], 0) + 1
             
-        return s_hmap == t_hmap
-            
-        
-        
+#         return s_hmap == t_hmap
