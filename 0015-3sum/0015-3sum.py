@@ -7,12 +7,11 @@ class Solution:
         print(nums)
         
         for i, n in enumerate(nums):
-            # start on first index
-            
-            # if
+            # if there's no negative numbers it can't sum to 0
             if n > 0:
                 break
 
+            # if not first index and same number as prev num on list continue
             if i > 0 and n == nums[i - 1]:
                 continue
             
@@ -22,11 +21,9 @@ class Solution:
             r = len(nums) - 1
             
             while(l < r):
-                
                 # if sum of left and right is greater than 0
-                sum = nums[i] + nums[l] + nums[r]
-                
                 # print(nums[i], nums[l], nums[r], sum)
+                sum = nums[i] + nums[l] + nums[r]
                 
                 if sum < 0:
                     l += 1
