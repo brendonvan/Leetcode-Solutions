@@ -5,6 +5,7 @@ class Solution:
         # sort list to allow for use of two pointers with sum
         nums.sort()
         print(nums)
+        [-4, -1, -1, 0, 1, 2]
         
         for i, n in enumerate(nums):
             # if there's no negative numbers it can't sum to 0
