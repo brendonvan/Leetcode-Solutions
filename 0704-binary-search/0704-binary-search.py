@@ -7,6 +7,7 @@ class Solution:
                 return -1
         
         middle = int(len(nums) / 2)
+        
         if target >= nums[middle]:
             for i,n in enumerate(nums[middle::]):
                 if target == n:
