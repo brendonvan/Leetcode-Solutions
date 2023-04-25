@@ -4,15 +4,14 @@
 #         self.val = x
 #         self.next = None
 
+
 class Solution:
-    def hasCycle(self, head: Optional[ListNode]) -> bool:
-        hset = set()
-        
-        curr = head
-        while curr:
-            if curr in hset:
+    def hasCycle(self, head: ListNode) -> bool:
+        slow, fast = head, head
+
+        while fast and fast.next:
+            slow = slow.next
+            fast = fast.next.next
+            if slow == fast:
                 return True
-            hset.add(curr)
-            curr = curr.next
-            
         return False
